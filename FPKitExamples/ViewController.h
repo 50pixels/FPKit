@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class FPNoInternetBar;
 
+@interface ViewController : UIViewController
+{
+    FPNoInternetBar *bar;
+}
 @end

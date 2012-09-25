@@ -30,6 +30,7 @@
     [self stopMonitoring];
     [_hostname release];
     [_backgroundImageView release];
+    [_warningImageView release];
     [_textLabel release];
     [super dealloc];
 }
@@ -60,9 +61,14 @@
         _textLabel.text = NSLocalizedString(@"No Internet Connection", nil); //default message
         
         _backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _warningImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fp_warning.png"]];
+        
         _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _warningImageView.contentMode = UIViewContentModeScaleAspectFit;
+        
         [self addSubview:_backgroundImageView];
         [self addSubview:_textLabel];
+        [self addSubview:_warningImageView];
         [self setHidden:YES];
     }
     return self;
@@ -130,12 +136,21 @@
     
     _textLabel.backgroundColor = [UIColor clearColor];
     _textLabel.textColor = [UIColor whiteColor];
-    _textLabel.frame = self.bounds;
     _textLabel.textAlignment = NSTextAlignmentCenter;
     _textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
     _textLabel.shadowColor = [UIColor lightGrayColor];
     _textLabel.shadowOffset = CGSizeMake(0, -1);
     
+    CGRect tlf = self.bounds;
+    tlf.origin.x = 64;
+    tlf.size.width -= 64;
+    _textLabel.frame = tlf;
+    
+    CGRect wif;
+    wif.size = CGSizeMake(24, 19);
+    wif.origin.x = 32;
+    wif.origin.y = (tlf.size.height - wif.size.height)/2.0;
+    _warningImageView.frame = wif;
 }
 
 
@@ -152,7 +167,7 @@
     CGRect bf;
     bf.size = CGSizeMake([self barWidth], [self barHeight]);
     //at first I'm positioning the view outside
-
+    
     //TOP (outside)
     if(self.position == FPBarTop)
         bf.origin = CGPointMake(0, -bf.size.height);

@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [FPNoInternetBar barWithHostname:nil destinationView:self.view];
+    bar = [FPNoInternetBar barWithHostname:nil destinationView:self.view];
+    [bar retain];
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +29,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [bar showBar];
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [bar hideBar];
+}
 @end

@@ -26,6 +26,8 @@
 		1872D0641611FBD500818850 /* FPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D0621611FBD500818850 /* FPKit.m */; };
 		1872D074161217CD00818850 /* fp_bar_red_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872D0721612178500818850 /* fp_bar_red_background.png */; };
 		1872D075161217CD00818850 /* fp_bar_red_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872D0731612178500818850 /* fp_bar_red_background@2x.png */; };
+		1872D078161218C100818850 /* fp_warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872D076161218C100818850 /* fp_warning.png */; };
+		1872D079161218C100818850 /* fp_warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1872D077161218C100818850 /* fp_warning@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +72,8 @@
 		1872D0621611FBD500818850 /* FPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPKit.m; sourceTree = "<group>"; };
 		1872D0721612178500818850 /* fp_bar_red_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fp_bar_red_background.png; sourceTree = "<group>"; };
 		1872D0731612178500818850 /* fp_bar_red_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fp_bar_red_background@2x.png"; sourceTree = "<group>"; };
+		1872D076161218C100818850 /* fp_warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fp_warning.png; sourceTree = "<group>"; };
+		1872D077161218C100818850 /* fp_warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fp_warning@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,8 @@
 		1872D06F16120E5800818850 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1872D076161218C100818850 /* fp_warning.png */,
+				1872D077161218C100818850 /* fp_warning@2x.png */,
 				1872D0721612178500818850 /* fp_bar_red_background.png */,
 				1872D0731612178500818850 /* fp_bar_red_background@2x.png */,
 			);
@@ -271,6 +277,8 @@
 				1872D03A1611D18300818850 /* MainStoryboard_iPad.storyboard in Resources */,
 				1872D074161217CD00818850 /* fp_bar_red_background.png in Resources */,
 				1872D075161217CD00818850 /* fp_bar_red_background@2x.png in Resources */,
+				1872D078161218C100818850 /* fp_warning.png in Resources */,
+				1872D079161218C100818850 /* fp_warning@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
