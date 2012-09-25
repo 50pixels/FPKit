@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FPKitExamples.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1872D0021611D04600818850</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1872D01B1611D18300818850</key>
 		<dict>
 			<key>primary</key>
 			<true/>
