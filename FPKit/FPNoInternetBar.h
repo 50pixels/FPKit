@@ -43,8 +43,10 @@ typedef enum FPBarPosition {
 {
     UIView *_destinationView;
     NSString *_hostname;
-
+    
     Reachability *_reach;
+
+    UILabel *_textLabel;
 }
 @property(nonatomic,readonly) BOOL reachable;
 @property(nonatomic,assign) FPBarPosition position;

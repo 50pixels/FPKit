@@ -52,6 +52,9 @@
             _hostname = @"www.google.com";
         }
         [_destinationView addSubview:self];
+        _textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _textLabel.text = NSLocalizedString(@"\u26A0 No Internet Connection", nil); //default message
+        [self addSubview:_textLabel];
         [self setHidden:YES];
     }
     return self;
@@ -106,6 +109,13 @@
 -(void)setupUI
 {
     self.backgroundColor = [UIColor redColor];
+    _textLabel.backgroundColor = [UIColor clearColor];
+    _textLabel.textColor = [UIColor whiteColor];
+    _textLabel.frame = self.bounds;
+    _textLabel.textAlignment = NSTextAlignmentCenter;
+    _textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
+    _textLabel.shadowColor = [UIColor lightGrayColor];
+    _textLabel.shadowOffset = CGSizeMake(0, -1);
 }
 
 
