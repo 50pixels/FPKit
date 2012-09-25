@@ -7,7 +7,7 @@
 //
 
 #import "FPNoInternetBar.h"
-#import "Reachability.h"
+#import "FPReachability.h"
 
 #import "FPKit.h"
 
@@ -83,8 +83,8 @@
 -(void)startMonitoring
 {
     [self stopMonitoring];
-    _reach = [[Reachability reachabilityWithHostname:_hostname] retain];
-    _reach.reachableBlock = ^(Reachability*reach){
+    _reach = [[FPReachability reachabilityWithHostname:_hostname] retain];
+    _reach.reachableBlock = ^(FPReachability*reach){
         _reachable = YES;
 
         if([NSThread isMainThread] == NO)
@@ -96,7 +96,7 @@
             
     };
     
-    _reach.unreachableBlock = ^(Reachability*reach){
+    _reach.unreachableBlock = ^(FPReachability*reach){
         _reachable = NO;
         if([NSThread isMainThread] == NO)
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -129,8 +129,9 @@
 
 -(void)setupUI
 {
+    self.alpha = 0.8;
+
     self.backgroundColor = [UIColor redColor];
-    
     _backgroundImageView.image = [self barBackgroundImage];
     _backgroundImageView.frame = self.bounds;
     

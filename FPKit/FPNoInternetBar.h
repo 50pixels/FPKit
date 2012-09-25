@@ -38,13 +38,13 @@ typedef enum FPBarPosition {
     FPBarBottom
 } FPBarPosition;
 
-@class  Reachability;
+@class  FPReachability;
 @interface FPNoInternetBar : UIView
 {
     UIView *_destinationView;
     NSString *_hostname;
     
-    Reachability *_reach;
+    FPReachability *_reach;
 
     UIImageView *_backgroundImageView;
     UIImageView *_warningImageView;
