@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1872D0071611D04600818850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872D0061611D04600818850 /* Foundation.framework */; };
+		1872D00C1611D04600818850 /* FPKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1872D00B1611D04600818850 /* FPKit.h */; };
+		1872D00E1611D04600818850 /* FPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D00D1611D04600818850 /* FPKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1872D0011611D04600818850 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				1872D00C1611D04600818850 /* FPKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1872D0031611D04600818850 /* libFPKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFPKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1872D0061611D04600818850 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1872D00A1611D04600818850 /* FPKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKit-Prefix.pch"; sourceTree = "<group>"; };
+		1872D00B1611D04600818850 /* FPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPKit.h; sourceTree = "<group>"; };
+		1872D00D1611D04600818850 /* FPKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1872D0001611D04600818850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1872D0071611D04600818850 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1872CFF81611D04600818850 = {
+			isa = PBXGroup;
+			children = (
+				1872D0081611D04600818850 /* FPKit */,
+				1872D0051611D04600818850 /* Frameworks */,
+				1872D0041611D04600818850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1872D0041611D04600818850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1872D0031611D04600818850 /* libFPKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1872D0051611D04600818850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1872D0061611D04600818850 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1872D0081611D04600818850 /* FPKit */ = {
+			isa = PBXGroup;
+			children = (
+				1872D00B1611D04600818850 /* FPKit.h */,
+				1872D00D1611D04600818850 /* FPKit.m */,
+				1872D0091611D04600818850 /* Supporting Files */,
+			);
+			path = FPKit;
+			sourceTree = "<group>";
+		};
+		1872D0091611D04600818850 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1872D00A1611D04600818850 /* FPKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1872D0021611D04600818850 /* FPKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1872D0111611D04600818850 /* Build configuration list for PBXNativeTarget "FPKit" */;
+			buildPhases = (
+				1872CFFF1611D04600818850 /* Sources */,
+				1872D0001611D04600818850 /* Frameworks */,
+				1872D0011611D04600818850 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPKit;
+			productName = FPKit;
+			productReference = 1872D0031611D04600818850 /* libFPKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1872CFFA1611D04600818850 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Fifty Pixels Ltd";
+			};
+			buildConfigurationList = 1872CFFD1611D04600818850 /* Build configuration list for PBXProject "FPKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1872CFF81611D04600818850;
+			productRefGroup = 1872D0041611D04600818850 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1872D0021611D04600818850 /* FPKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1872CFFF1611D04600818850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1872D00E1611D04600818850 /* FPKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1872D00F1611D04600818850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1872D0101611D04600818850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1872D0121611D04600818850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FPKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPKit/FPKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1872D0131611D04600818850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FPKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPKit/FPKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1872CFFD1611D04600818850 /* Build configuration list for PBXProject "FPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1872D00F1611D04600818850 /* Debug */,
+				1872D0101611D04600818850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1872D0111611D04600818850 /* Build configuration list for PBXNativeTarget "FPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1872D0121611D04600818850 /* Debug */,
+				1872D0131611D04600818850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1872CFFA1611D04600818850 /* Project object */;
+}
