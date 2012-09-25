@@ -9,6 +9,8 @@
 #import "FPNoInternetBar.h"
 #import "Reachability.h"
 
+#import "FPKit.h"
+
 @interface FPNoInternetBar(Private)
 -(void)setupUI;
 
@@ -27,6 +29,8 @@
 {
     [self stopMonitoring];
     [_hostname release];
+    [_backgroundImageView release];
+    [_textLabel release];
     [super dealloc];
 }
 
@@ -53,7 +57,11 @@
         }
         [_destinationView addSubview:self];
         _textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _textLabel.text = NSLocalizedString(@"\u26A0 No Internet Connection", nil); //default message
+        _textLabel.text = NSLocalizedString(@"No Internet Connection", nil); //default message
+        
+        _backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+        [self addSubview:_backgroundImageView];
         [self addSubview:_textLabel];
         [self setHidden:YES];
     }
@@ -106,9 +114,20 @@
     return _destinationView.frame.size.width;
 }
 
+-(UIImage*)barBackgroundImage
+{
+    return [UIImage imageNamed:@"fp_bar_red_background.png"];
+}
+
+
+
 -(void)setupUI
 {
     self.backgroundColor = [UIColor redColor];
+    
+    _backgroundImageView.image = [self barBackgroundImage];
+    _backgroundImageView.frame = self.bounds;
+    
     _textLabel.backgroundColor = [UIColor clearColor];
     _textLabel.textColor = [UIColor whiteColor];
     _textLabel.frame = self.bounds;
@@ -116,6 +135,7 @@
     _textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18];
     _textLabel.shadowColor = [UIColor lightGrayColor];
     _textLabel.shadowOffset = CGSizeMake(0, -1);
+    
 }
 
 

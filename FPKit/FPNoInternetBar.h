@@ -46,6 +46,7 @@ typedef enum FPBarPosition {
     
     Reachability *_reach;
 
+    UIImageView *_backgroundImageView;
     UILabel *_textLabel;
 }
 @property(nonatomic,readonly) BOOL reachable;
