@@ -1,13 +1,13 @@
 //
-//  FPKit.h
+//  FPNoInternetBar.m
 //  FPKit
 //
 //  Created by Alvise Susmel on 25/09/2012.
 //  Copyright (c) 2012 Fifty Pixels Ltd. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "FPNoInternetBar.h"
 
-@interface FPKit : NSObject
+@implementation FPNoInternetBar
 
 @end

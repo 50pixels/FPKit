@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1872D0071611D04600818850 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872D0061611D04600818850 /* Foundation.framework */; };
-		1872D00C1611D04600818850 /* FPKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1872D00B1611D04600818850 /* FPKit.h */; };
-		1872D00E1611D04600818850 /* FPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D00D1611D04600818850 /* FPKit.m */; };
+		1872D0171611D0D900818850 /* FPNoInternetBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D0161611D0D900818850 /* FPNoInternetBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				1872D00C1611D04600818850 /* FPKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +27,8 @@
 		1872D0031611D04600818850 /* libFPKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFPKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1872D0061611D04600818850 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1872D00A1611D04600818850 /* FPKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FPKit-Prefix.pch"; sourceTree = "<group>"; };
-		1872D00B1611D04600818850 /* FPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPKit.h; sourceTree = "<group>"; };
-		1872D00D1611D04600818850 /* FPKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPKit.m; sourceTree = "<group>"; };
+		1872D0151611D0D900818850 /* FPNoInternetBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPNoInternetBar.h; sourceTree = "<group>"; };
+		1872D0161611D0D900818850 /* FPNoInternetBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPNoInternetBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +71,7 @@
 		1872D0081611D04600818850 /* FPKit */ = {
 			isa = PBXGroup;
 			children = (
-				1872D00B1611D04600818850 /* FPKit.h */,
-				1872D00D1611D04600818850 /* FPKit.m */,
+				1872D0141611D05600818850 /* Bars */,
 				1872D0091611D04600818850 /* Supporting Files */,
 			);
 			path = FPKit;
@@ -86,6 +83,15 @@
 				1872D00A1611D04600818850 /* FPKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1872D0141611D05600818850 /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				1872D0151611D0D900818850 /* FPNoInternetBar.h */,
+				1872D0161611D0D900818850 /* FPNoInternetBar.m */,
+			);
+			name = Bars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1872D00E1611D04600818850 /* FPKit.m in Sources */,
+				1872D0171611D0D900818850 /* FPNoInternetBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
