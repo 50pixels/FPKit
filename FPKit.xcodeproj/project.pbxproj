@@ -22,6 +22,10 @@
 		1872D03A1611D18300818850 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1872D0381611D18300818850 /* MainStoryboard_iPad.storyboard */; };
 		1872D03D1611D18300818850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D03C1611D18300818850 /* ViewController.m */; };
 		1872D0411611D18B00818850 /* FPNoInternetBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D0161611D0D900818850 /* FPNoInternetBar.m */; };
+		1872D0461611E9D300818850 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D0451611E9D300818850 /* Reachability.m */; };
+		1872D0471611E9D300818850 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872D0451611E9D300818850 /* Reachability.m */; };
+		1872D04A1611F3D700818850 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872D0491611F3D700818850 /* CFNetwork.framework */; };
+		1872D04C1611F3FE00818850 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872D04B1611F3FE00818850 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +62,10 @@
 		1872D0391611D18300818850 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1872D03B1611D18300818850 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1872D03C1611D18300818850 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1872D0441611E9D300818850 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = SOURCE_ROOT; };
+		1872D0451611E9D300818850 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = SOURCE_ROOT; };
+		1872D0491611F3D700818850 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1872D04B1611F3FE00818850 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1872D04C1611F3FE00818850 /* SystemConfiguration.framework in Frameworks */,
+				1872D04A1611F3D700818850 /* CFNetwork.framework in Frameworks */,
 				1872D01F1611D18300818850 /* UIKit.framework in Frameworks */,
 				1872D0201611D18300818850 /* Foundation.framework in Frameworks */,
 				1872D0221611D18300818850 /* CoreGraphics.framework in Frameworks */,
@@ -85,6 +95,8 @@
 		1872CFF81611D04600818850 = {
 			isa = PBXGroup;
 			children = (
+				1872D04B1611F3FE00818850 /* SystemConfiguration.framework */,
+				1872D0491611F3D700818850 /* CFNetwork.framework */,
 				1872D0081611D04600818850 /* FPKit */,
 				1872D0231611D18300818850 /* FPKitExamples */,
 				1872D0051611D04600818850 /* Frameworks */,
@@ -177,6 +189,8 @@
 		1872D0431611D38800818850 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
+				1872D0441611E9D300818850 /* Reachability.h */,
+				1872D0451611E9D300818850 /* Reachability.m */,
 			);
 			name = Reachability;
 			sourceTree = "<group>";
@@ -267,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1872D0171611D0D900818850 /* FPNoInternetBar.m in Sources */,
+				1872D0461611E9D300818850 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +293,7 @@
 				1872D02E1611D18300818850 /* AppDelegate.m in Sources */,
 				1872D03D1611D18300818850 /* ViewController.m in Sources */,
 				1872D0411611D18B00818850 /* FPNoInternetBar.m in Sources */,
+				1872D0471611E9D300818850 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
